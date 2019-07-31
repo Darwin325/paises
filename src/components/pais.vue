@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <h1>Buscar pais por nombre</h1>
-    <input 
-      type="text" class="form-control" 
+    <input
+      type="text" class="form-control"
       v-model="buscarPais"
       placeholder="Buscar pais por nombre"
     >
@@ -63,7 +63,6 @@
         countries.getCountryByName(query).then(res =>{
           if (res.length !== 0){
             this.paises = res;
-            console.log(this.paises)
           }
         }).catch(error =>{
           console.log(error);
