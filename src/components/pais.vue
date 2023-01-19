@@ -71,6 +71,7 @@
 
       getAllCountries(){
         countries.getAllCountries().then(res =>{
+            console.log(res);
           this.paises = res;
         }).catch(error =>{
           console.log(error);
